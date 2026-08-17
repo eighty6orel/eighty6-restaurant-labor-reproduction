@@ -34,7 +34,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest==8.4.1",
-    "ruff==0.12.10",
+    "ruff==0.16.3",
 ]
 eventstudy = [
     "csdid==0.1.0",

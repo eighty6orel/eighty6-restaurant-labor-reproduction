@@ -36,7 +36,15 @@ Census `county_adjacency.txt` is fetched over HTTPS on live RQ9 runs and gitigno
 
 ## Fixture headlines ≠ paper headlines
 
-Committed samples have eight counties and eight quarters. Offline RQ1 county n will be 8, not 2,538. Do not cite fixture output as study results.
+Committed samples have eight counties and eight quarters. National fixture employment and wage shares are **illustrative** (they do not equal the RQ5 job counts or RQ1 paper shares). Offline RQ1 county n will be 8, not 2,538. Do not cite fixture output as study results.
+
+## TWFE on fixtures
+
+`linearmodels.PanelOLS` needs ≥ 80 complete rows. The eight-county fixture is below that threshold, so offline RQ7/RQ10 return `error: too few rows`. That is expected. Live Pro panels reproduce the deliverable coefficients.
+
+## RQ8 pre-trend cells
+
+The deliverable reports CS ATT at e=−8, e=−4, e=0, e=+3 and stacked `rel::0`. Those paths require `csdid` plus the full state-year panel. This package implements the same estimator; without `csdid` or a live panel the terms are absent and `cs_causal` stays false (matching the locked screen).
 
 ## What this repo will not do
 

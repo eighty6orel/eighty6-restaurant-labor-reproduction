@@ -106,9 +106,10 @@ python scripts/01_pull_qcew.py --geography all --start-year 2014 --end-year 2025
 python scripts/03_build_mw.py
 python scripts/02_build_panel.py
 python scripts/04_reproduce.py --live
+python scripts/05_compare_headlines.py
 ```
 
-National RQ1/RQ5 headlines can be checked on Basic. County quantiles, TWFE, event study, and border pairs need Pro.
+National RQ1/RQ5 headlines can be checked on Basic. County quantiles, TWFE, event study, and border pairs need Pro. Offline comparison (`python scripts/05_compare_headlines.py --offline`) skips county-only headlines.
 
 ## Command sequence
 

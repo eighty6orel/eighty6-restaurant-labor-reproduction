@@ -33,7 +33,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pytest==8.4.1",
+    "pytest==9.1.1",
     "ruff==0.12.10",
 ]
 eventstudy = [

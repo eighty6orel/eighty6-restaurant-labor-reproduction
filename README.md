@@ -7,7 +7,7 @@ pip install -e ".[dev]"
 python scripts/04_reproduce.py --offline
 ```
 
-That offline command needs no key. It runs the estimators on a tiny committed sample so you can see the pipeline. Paper-grade county results need a live **Pro** pull.
+That offline command needs no key. It runs the estimators on a tiny committed sample so you can see the pipeline. Paper-grade county results need a live **Pro** pull — Basic cannot page the full county universe in a reasonable number of 1,000-row, 365-day requests.
 
 ## What you can reproduce
 

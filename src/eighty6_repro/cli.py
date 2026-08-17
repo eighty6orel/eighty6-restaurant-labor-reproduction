@@ -7,6 +7,8 @@ import json
 from datetime import UTC, datetime
 from typing import Any
 
+import polars as pl
+
 from eighty6_repro.fixtures import load_qcew_fixture
 from eighty6_repro.mw import build_panel, write_panel
 from eighty6_repro.panel import cast_decimals, county_panel, merge_mw, state_panel, us_panel

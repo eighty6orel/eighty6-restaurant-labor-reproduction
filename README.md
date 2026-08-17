@@ -49,9 +49,12 @@ python -m venv .venv
 **PowerShell**
 
 ```powershell
-.\.venv\Scripts\Activate.ps1
-pip install -e ".[dev]"
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 ```
+
+If you prefer to activate the venv and `Activate.ps1` is blocked, run
+`Set-ExecutionPolicy -Scope Process RemoteSigned` once in that window, or keep
+calling `.venv\Scripts\python.exe` and `.venv\Scripts\pip.exe` directly.
 
 **bash**
 
@@ -117,10 +120,9 @@ National RQ1/RQ5 headlines can be checked on Basic. County quantiles, TWFE, even
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -e ".[dev]"
-pytest
-python scripts/04_reproduce.py --offline
+.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
+.\.venv\Scripts\pytest.exe
+.\.venv\Scripts\python.exe scripts/04_reproduce.py --offline
 ```
 
 **bash**

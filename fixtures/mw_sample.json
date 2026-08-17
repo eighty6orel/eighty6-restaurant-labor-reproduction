@@ -1,0 +1,242 @@
+[
+  {
+    "state_fips": "06",
+    "year": 2014,
+    "qtr": 1,
+    "mw_nominal": 8.0
+  },
+  {
+    "state_fips": "06",
+    "year": 2019,
+    "qtr": 1,
+    "mw_nominal": 12.0
+  },
+  {
+    "state_fips": "06",
+    "year": 2019,
+    "qtr": 4,
+    "mw_nominal": 12.0
+  },
+  {
+    "state_fips": "06",
+    "year": 2020,
+    "qtr": 2,
+    "mw_nominal": 13.0
+  },
+  {
+    "state_fips": "06",
+    "year": 2023,
+    "qtr": 1,
+    "mw_nominal": 15.5
+  },
+  {
+    "state_fips": "06",
+    "year": 2023,
+    "qtr": 4,
+    "mw_nominal": 15.5
+  },
+  {
+    "state_fips": "06",
+    "year": 2024,
+    "qtr": 1,
+    "mw_nominal": 16.0
+  },
+  {
+    "state_fips": "06",
+    "year": 2024,
+    "qtr": 4,
+    "mw_nominal": 16.0
+  },
+  {
+    "state_fips": "48",
+    "year": 2014,
+    "qtr": 1,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2019,
+    "qtr": 1,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2019,
+    "qtr": 4,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2020,
+    "qtr": 2,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2023,
+    "qtr": 1,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2023,
+    "qtr": 4,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2024,
+    "qtr": 1,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "48",
+    "year": 2024,
+    "qtr": 4,
+    "mw_nominal": 7.25
+  },
+  {
+    "state_fips": "36",
+    "year": 2014,
+    "qtr": 1,
+    "mw_nominal": 8.0
+  },
+  {
+    "state_fips": "36",
+    "year": 2019,
+    "qtr": 1,
+    "mw_nominal": 11.1
+  },
+  {
+    "state_fips": "36",
+    "year": 2019,
+    "qtr": 4,
+    "mw_nominal": 11.1
+  },
+  {
+    "state_fips": "36",
+    "year": 2020,
+    "qtr": 2,
+    "mw_nominal": 11.8
+  },
+  {
+    "state_fips": "36",
+    "year": 2023,
+    "qtr": 1,
+    "mw_nominal": 14.2
+  },
+  {
+    "state_fips": "36",
+    "year": 2023,
+    "qtr": 4,
+    "mw_nominal": 14.2
+  },
+  {
+    "state_fips": "36",
+    "year": 2024,
+    "qtr": 1,
+    "mw_nominal": 15.0
+  },
+  {
+    "state_fips": "36",
+    "year": 2024,
+    "qtr": 4,
+    "mw_nominal": 15.0
+  },
+  {
+    "state_fips": "17",
+    "year": 2014,
+    "qtr": 1,
+    "mw_nominal": 8.25
+  },
+  {
+    "state_fips": "17",
+    "year": 2019,
+    "qtr": 1,
+    "mw_nominal": 8.25
+  },
+  {
+    "state_fips": "17",
+    "year": 2019,
+    "qtr": 4,
+    "mw_nominal": 8.25
+  },
+  {
+    "state_fips": "17",
+    "year": 2020,
+    "qtr": 2,
+    "mw_nominal": 10.0
+  },
+  {
+    "state_fips": "17",
+    "year": 2023,
+    "qtr": 1,
+    "mw_nominal": 13.0
+  },
+  {
+    "state_fips": "17",
+    "year": 2023,
+    "qtr": 4,
+    "mw_nominal": 13.0
+  },
+  {
+    "state_fips": "17",
+    "year": 2024,
+    "qtr": 1,
+    "mw_nominal": 14.0
+  },
+  {
+    "state_fips": "17",
+    "year": 2024,
+    "qtr": 4,
+    "mw_nominal": 14.0
+  },
+  {
+    "state_fips": "53",
+    "year": 2014,
+    "qtr": 1,
+    "mw_nominal": 9.32
+  },
+  {
+    "state_fips": "53",
+    "year": 2019,
+    "qtr": 1,
+    "mw_nominal": 12.0
+  },
+  {
+    "state_fips": "53",
+    "year": 2019,
+    "qtr": 4,
+    "mw_nominal": 12.0
+  },
+  {
+    "state_fips": "53",
+    "year": 2020,
+    "qtr": 2,
+    "mw_nominal": 13.5
+  },
+  {
+    "state_fips": "53",
+    "year": 2023,
+    "qtr": 1,
+    "mw_nominal": 15.74
+  },
+  {
+    "state_fips": "53",
+    "year": 2023,
+    "qtr": 4,
+    "mw_nominal": 15.74
+  },
+  {
+    "state_fips": "53",
+    "year": 2024,
+    "qtr": 1,
+    "mw_nominal": 16.28
+  },
+  {
+    "state_fips": "53",
+    "year": 2024,
+    "qtr": 4,
+    "mw_nominal": 16.28
+  }
+]

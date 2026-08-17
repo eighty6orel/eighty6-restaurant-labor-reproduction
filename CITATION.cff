@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: eighty6 restaurant labor reproduction
+message: If you use this reproduction package, please cite it and the underlying BLS QCEW data.
+type: software
+authors:
+  - name: Eighty6
+repository-code: https://github.com/eighty6orel/eighty6-restaurant-labor-reproduction
+url: https://www.eighty6data.com
+license: MIT
+date-released: "2026-08-17"
+abstract: >
+  Public companion that reconstructs the Wage Share Restaurant Health papers
+  (RQ1–RQ10) from the eighty6 QCEW API plus cited public minimum-wage sources.
+keywords:
+  - QCEW
+  - BLS
+  - minimum wage
+  - restaurants
+  - reproducibility

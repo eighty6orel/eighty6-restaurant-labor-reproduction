@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eighty6-restaurant-labor-reproduction"
+version = "0.1.0"
+description = "Reproduce the eighty6 restaurant labor papers from the public QCEW API."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Eighty6" }]
+keywords = ["qcew", "bls", "minimum-wage", "reproducibility", "restaurants"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "httpx==0.28.1",
+    "polars==1.32.3",
+    "matplotlib==3.10.5",
+    "numpy==2.3.2",
+    "scipy==1.16.1",
+    "scikit-learn==1.7.1",
+    "statsmodels==0.14.5",
+    "linearmodels==6.1",
+    "pyyaml==6.0.2",
+    "python-dotenv==1.1.1",
+    "openpyxl==3.1.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.4.1",
+    "ruff==0.12.10",
+]
+eventstudy = [
+    "csdid==0.1.0",
+    "pyfixest==0.40.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/eighty6orel/eighty6-restaurant-labor-reproduction"
+Documentation = "https://www.eighty6data.com/api/docs"
+Source = "https://github.com/eighty6orel/eighty6-restaurant-labor-reproduction"
+"API signup" = "https://www.eighty6data.com"
+
+[project.scripts]
+e86-repro = "eighty6_repro.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+src = ["src", "scripts", "tests"]
+extend-exclude = ["scripts/_make_fixtures.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

@@ -1,0 +1,36 @@
+name: Bug report
+description: Something in the reproduction package or API client is wrong
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not paste API keys.** Keys start with `e86_`. Revoke an exposed key at https://www.eighty6data.com.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Expected vs actual behavior.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Run mode
+      options:
+        - Offline fixtures (no key)
+        - Live API, Basic plan
+        - Live API, Pro plan
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: python scripts/04_reproduce.py --offline
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (redacted)
+      description: Paste traceback with keys and emails removed.

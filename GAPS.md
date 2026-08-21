@@ -46,13 +46,17 @@ Committed samples have eight counties and eight quarters. National fixture emplo
 
 The deliverable reports CS ATT at e=−8, e=−4, e=0, e=+3 and stacked `rel::0`. Those paths require `csdid` plus the full state-year panel. This package implements the same estimator; without `csdid` or a live panel the terms are absent and `cs_causal` stays false (matching the locked screen).
 
-## Hygiene audits (2026-08-17)
+## City generation is a geography rebuild
 
-- **Loop C:** `git ls-files` has no parquet, pptx, `.env`, or PDFs. History contains no live `e86_` keys, `postgres://`, or `sk_live_`. `.env.example` is empty. Topics, MIT license, `CITATION.cff`, and `SECURITY.md` are on `main`.
-- **Loop D:** Client query params and pagination fields match production OpenAPI at `https://www.eighty6data.com/api/openapi.json` (`year` or `start_year`/`end_year`, single `industry_code` / `agglvl_code`, `offset`/`limit`, `data`/`total`/`has_more`). Plan limits match the platform `basic`/`pro` table. Papers do not claim causation for RQ7–RQ10.
+`generations/20260818-citygen/` publishes the county→CBSA crosswalk and the sum-then-divide identity. It does **not** ship city-level RQ estimators. After `scripts/02_build_panel.py`, run `python generations/20260818-citygen/src/aggregate_to_cities.py`. Compare city figures only to that generation, never to `papers/rq/`.
+
+## Hygiene audits
+
+- **2026-08-17 (Loops C–D):** tracked tree has no parquet, pptx, `.env`, or PDFs. History on `main` contains no live `e86_` keys. Client params match production OpenAPI. Papers do not claim causation for RQ7–RQ10.
+- **2026-08-20:** Dependabot weekly PRs disabled (pinned deps are part of the lock). Public tree no longer lists private Drive paths, platform-repo branches, local Windows paths, or unused election/tax fields.
 
 ## What this repo will not do
 
-- It will not connect to Postgres or ship a `research_area_panel` dump.
+- It will not connect to Postgres or ship a research-panel dump.
 - It will not upgrade RQ7–RQ10 to causal language.
-- It will not make the private platform monorepo public.
+- It will not publish internal research-process notes.

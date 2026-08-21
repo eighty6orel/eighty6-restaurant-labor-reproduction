@@ -27,6 +27,10 @@ jobs:
             echo "Possible secret pattern found in tracked files"
             exit 1
           fi
+          if git grep -nE 'H:\\\\|/My Drive/|C:\\\\Users\\\\|epic86_|USA-restaurant-labor-policy-analysis' -- ':!GAPS.md' ':!.github/**'; then
+            echo "Private path or internal repo name found in tracked files"
+            exit 1
+          fi
           echo "No secret patterns found"
       - name: Pytest (offline fixtures)
         run: pytest

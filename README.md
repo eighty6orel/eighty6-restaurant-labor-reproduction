@@ -26,6 +26,8 @@ That offline command needs no key. It runs the estimators on a tiny committed sa
 
 Canonical numbers and tolerances: [`expected/headlines.json`](expected/headlines.json). Papers: [`papers/README.md`](papers/README.md).
 
+**City layer (generation `citygen-20260818`).** After a live county panel, rebuild the 100 largest CBSAs with [`generations/20260818-citygen/`](generations/20260818-citygen/). City shares are summed numerators over summed denominators — never an average of county shares. Do not mix those figures with `papers/rq/` county numbers.
+
 ## Get an API key
 
 1. Create an account at [https://www.eighty6data.com](https://www.eighty6data.com).
@@ -171,6 +173,7 @@ A full 2014–2025 county pull loops ~13 industries × 3 county agglvls × year 
 - **Vaghul and Zipperer (2022)**, historicalminwage v1.4.0, [GitHub release](https://github.com/benzipperer/historicalminwage/releases/tag/v1.4.0).
 - **U.S. DOL WHD** state minimum-wage history, [DOL table](https://www.dol.gov/agencies/whd/state/minimum-wage/history), transcribed 2026-08-16.
 - **Census** county adjacency, [county_adjacency.txt](https://www2.census.gov/geo/docs/reference/county_adjacency.txt).
+- **Census** Vintage 2024 CBSA population and OMB Bulletin 23-01 delineations (city generation only). URLs in `generations/20260818-citygen/data/crosswalk_meta.json`.
 - This repository is **MIT** (see `LICENSE`).
 
 ## Citing this repo and the papers
